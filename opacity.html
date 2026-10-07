@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="trials.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Welcome to the Registration Form</h1>
+    <fieldset>
+        <form>
+            <legend>
+                <h2>Registration form</h2>
+            </legend>
+            <input type="text" id="name" name="name" placeholder="Enter your name please"><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email please" required><br>
+            <input type="password" id="password" name="password" placeholder="Enter your password please" required><br>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm your password please" required><br>
+
+            <select id="country_code" name="country_code" required>
+                <option value="">Select your country code</option>
+                <option value="ug">+256</option>
+                <option value="ke">+254</option>
+                <option value="bu">+257</option>
+                <option value="uk">+44</option>
+                <option value="ca">+1</option>
+            </select><br>
+            <input type="text" id="phone" name="phone" placeholder="Enter your phone number please" required><br>
+            <input type="text" id="address" name="address" placeholder="Enter your address please" required><br>
+            <input type="text" id="city" name="city" placeholder="Enter your city please" required><br>
+            <input type="text" id="country" name="country" placeholder="Enter your country please" required><br>
+
+            <input type="range" id="age" name="age" placeholder="Age range allowed from 20 to 30" min="20" max="30"><br>
+
+            <input type="text" id="name" name="name" required><br>
+
+            <input type="text" id="name" name="name" required><br>
+            <input type="submit" value="Submit">
+        </form>
+    </fieldset>
+</body>
+
+</html>

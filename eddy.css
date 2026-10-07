@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    background-image: url("6.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* SAME CONTAINER FOR BOTH PAGES */
+
+.container {
+    width: 400px;
+    min-height: 450px;
+
+    padding: 35px;
+
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 15px;
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+
+    overflow: hidden;
+}
+
+
+/* BOTH PAGES ARE HIDDEN */
+
+.page {
+    display: none;
+    text-align: center;
+}
+
+
+/* LOGIN IS THE DEFAULT PAGE */
+
+#login {
+    display: block;
+    animation: loginAnimation 0.6s ease;
+}
+
+
+/* WHEN SIGN UP LINK IS CLICKED */
+
+#signup:target {
+    display: block;
+    animation: signupAnimation 0.6s ease;
+}
+
+
+/* WHEN LOGIN LINK IS CLICKED */
+
+#login:target {
+    display: block;
+    animation: loginAnimation 0.6s ease;
+}
+
+
+/* LOGIN COMES FROM LEFT */
+
+@keyframes loginAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* SIGN UP COMES FROM RIGHT */
+
+@keyframes signupAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* HEADING */
+
+h1 {
+    color: white;
+    margin-bottom: 25px;
+}
+
+
+/* INPUTS */
+
+input {
+    width: 100%;
+    padding: 12px;
+
+    margin: 8px 0;
+
+    border: none;
+    border-radius: 8px;
+
+    outline: none;
+
+    transition: 0.3s;
+}
+
+
+/* INPUT FOCUS */
+
+input:focus {
+    transform: scale(1.03);
+}
+
+
+/* SUBMIT BUTTON */
+
+input[type="submit"] {
+    background: #007bff;
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+/* BUTTON HOVER */
+
+input[type="submit"]:hover {
+    transform: scale(1.05);
+    background: #0056b3;
+}
+
+
+/* PARAGRAPH */
+
+p {
+    color: white;
+    margin-top: 20px;
+}
+
+
+/* LINKS */
+
+a {
+    color: yellow;
+    text-decoration: none;
+
+    transition: 0.3s;
+}
+
+
+/* LINK HOVER */
+
+a:hover {
+    color: white;
+}
